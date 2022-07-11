@@ -29,10 +29,12 @@
 
           <ul class="navigation-list">
             <li class="navigation-item">
-              <a href="./index.html" class="navigation-link">Студия</a>
+              <a href="./index.html" class="navigation-link current-link"
+                >Студия</a
+              >
             </li>
             <li class="navigation-item">
-              <a href="./portfolio.html" class="navigation-link current-link">Портфолио</a>
+              <a href="./portfolio.html" class="navigation-link">Портфолио</a>
             </li>
             <li class="navigation-item">
               <a href="" class="navigation-link">Контакты</a>
@@ -42,14 +44,24 @@
 
         <ul class="header-contacts-list">
           <li class="header-contact-item">
-            <a href="mailto:info@devstudio.com" class="header-contact-link"
-              >info@devstudio.com</a
-            >
+            <div class="header-contact-box">
+              <svg width="16" class="contact-icon">
+                <use href="./images/sprite.svg#icon-envelope"></use>
+              </svg>
+              <a href="mailto:info@devstudio.com" class="header-contact-link"
+                >info@devstudio.com</a
+              >
+            </div>
           </li>
           <li class="header-contact-item">
-            <a href="tel:+380961111111" class="header-contact-link"
-              >+38 096 111 11 11</a
-            >
+            <div class="header-contact-box">
+              <svg width="10" class="contact-icon">
+                <use href="./images/sprite.svg#icon-phone"></use>
+              </svg>
+              <a href="tel:+380961111111" class="header-contact-link"
+                >+38 096 111 11 11</a
+              >
+            </div>
           </li>
         </ul>
       </div>
@@ -62,7 +74,9 @@
 
           <ul class="filters-list">
             <li class="filter-item">
-              <button type="button" class="filter-button current-btn">Все</button>
+              <button type="button" class="filter-button current-btn">
+                Все
+              </button>
             </li>
             <li class="filter-item">
               <button type="button" class="filter-button">Веб-сайты</button>
@@ -213,26 +227,65 @@
     </main>
 
     <footer class="footer">
-      <a href="/" class="footer-logo">
-        <span class="logo-web">Web</span>
-        <span class="logo-white">Studio</span>
-      </a>
+      <div class="container footer-contacts">
+        <section class="footer-contacts-section">
+          <h2 class="visually-hidden">Наши контакты</h2>
+          <a href="./index.html" class="footer-logo">
+            <span class="logo-web">Web</span>
+            <span class="logo-white">Studio</span>
+          </a>
 
-      <address class="footer-addresses">
-        <p class="physical-address">г. Киев, пр-т Леси Украинки, 26</p>
-        <ul class="footer-contacts-list">
-          <li class="footer-contact-item">
-            <a href="mailto:info@devstudio.com" class="footer-contact-link"
-              >info@devstudio.com</a
-            >
-          </li>
-          <li class="footer-contact-item">
-            <a href="tel:+380961111111" class="footer-contact-link"
-              >+38 096 111 11 11</a
-            >
-          </li>
-        </ul>
-      </address>
+          <address class="footer-addresses">
+            <p class="physical-address">г. Киев, пр-т Леси Украинки, 26</p>
+            <ul class="footer-contacts-list">
+              <li class="footer-contact-item">
+                <a href="mailto:info@devstudio.com" class="footer-contact-link"
+                  >info@devstudio.com</a
+                >
+              </li>
+              <li class="footer-contact-item">
+                <a href="tel:+380961111111" class="footer-contact-link"
+                  >+38 096 111 11 11</a
+                >
+              </li>
+            </ul>
+          </address>
+        </section>
+
+        <section>
+          <h2 class="footer-title">присоединяйтесь</h2>
+          <ul class="footer-social-links-list">
+            <li class="footer-social-link">
+              <div class="footer-social-link-box">
+                <svg class="footer-social-icon">
+                  <use href="./images/sprite.svg#icon-instagram2"></use>
+                </svg>
+              </div>
+            </li>
+            <li class="footer-social-link">
+              <div class="footer-social-link-box">
+                <svg class="footer-social-icon">
+                  <use href="./images/sprite.svg#icon-twitter2"></use>
+                </svg>
+              </div>
+            </li>
+            <li class="footer-social-link">
+              <div class="footer-social-link-box">
+                <svg class="footer-social-icon">
+                  <use href="./images/sprite.svg#icon-facebook2"></use>
+                </svg>
+              </div>
+            </li>
+            <li class="footer-social-link">
+              <div class="footer-social-link-box">
+                <svg class="footer-social-icon">
+                  <use href="./images/sprite.svg#icon-linkedin2"></use>
+                </svg>
+              </div>
+            </li>
+          </ul>
+        </section>
+      </div>
     </footer>
   </body>
 </html>
