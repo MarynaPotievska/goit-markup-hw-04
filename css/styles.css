@@ -119,21 +119,9 @@ header {
   margin-right: 0;
 }
 
-.header-contact-box {
-  display: flex;
-  align-items: center;
-}
-
-.contact-icon {
-  margin-right: 10px;
-  height: 12px;
-}
-
-.header-contact-item:hover .contact-icon {
-  fill: var(--cl-accent);
-}
-
 .header-contact-link {
+  display: inline-flex;
+  align-items: center;
   text-decoration: none;
   font-weight: 500;
   font-size: var(--font-sz-base);
@@ -145,6 +133,24 @@ header {
 .header-contact-link:hover,
 .header-contact-link:focus {
   color: var(--cl-accent);
+}
+
+.contact-icon {
+  margin-right: 10px;
+  fill: var(--font-cl-secondary);
+}
+
+.contact-icon:nth-child(1) {
+  height: 12px;
+}
+
+.contact-icon:nth-child(2) {
+  height: 16px;
+}
+
+.header-contact-item:hover .contact-icon,
+.header-contact-link:focus .contact-icon {
+  fill: var(--cl-accent);
 }
 
 .section {
@@ -336,15 +342,16 @@ header {
   margin-right: 10px;
 }
 
-.social-icon-box {
-  display: flex;
-  width: 40px;
-  height: 40px;
+.social-icon-link {
+  display: inline-flex;
+  width: 44px;
+  height: 44px;
   align-items: center;
   justify-content: center;
 }
 
-.social-icon-box:hover {
+.social-icon-link:hover,
+.social-icon-link:focus {
   background-color: var(--cl-accent);
   border-radius: 50%;
 }
@@ -355,7 +362,8 @@ header {
   fill: var(--cl-icon-fill);
 }
 
-.social-icon-box:hover .social-icon {
+.social-icon-link:hover .social-icon,
+.social-icon-link:focus .social-icon {
   fill: var(--bg-cl-main);
 }
 
@@ -368,7 +376,7 @@ header {
   margin-right: var(--mrgn-secondary);
 }
 
-.client-box {
+.client-link {
   display: flex;
   width: 170px;
   height: 92px;
@@ -378,7 +386,8 @@ header {
   justify-content: center;
 }
 
-.client-box:hover {
+.client-link:hover,
+.client-link:focus {
   border-color: #2196f3;
 }
 
@@ -388,7 +397,8 @@ header {
   fill: var(--cl-icon-fill);
 }
 
-.client-box:hover .client-icon {
+.client-link:hover .client-icon,
+.client-link:focus .client-icon {
   fill: var(--cl-accent);
 }
 
@@ -539,21 +549,12 @@ header {
   margin-right: 10px;
 }
 
-.footer-social-link-box {
-  display: flex;
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
+.footer-social-link .social-icon-link {
   background-color: rgba(255, 255, 255, 0.1);
-  align-items: center;
-  justify-content: center;
+  border-radius: 50%;
 }
 
-.footer-social-link-box:hover {
+.footer-social-link .social-icon-link:hover,
+.footer-social-link .social-icon-link:focus {
   background-color: var(--cl-accent);
-}
-
-.footer-social-icon {
-  width: 20px;
-  height: 20px;
 }
