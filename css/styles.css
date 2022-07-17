@@ -447,7 +447,12 @@ header {
   gap: var(--mrgn-secondary);
 }
 
-.product-card:hover {
+.product-link {
+  display: block;
+}
+
+.product-link:hover,
+.product-link:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
 }
@@ -483,7 +488,7 @@ header {
   display: flex;
 }
 
-.footer-contacts-section:not(:last-child) {
+.footer-contacts-box:not(:last-child) {
   margin-right: 70px;
 }
 
